@@ -6,17 +6,6 @@ public class WhichPresidentWon {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        /** Методы ввода: */
-        // next(): считывает введенную строку до первого пробела
-        // nextLine():  - считывает всю введенную строку
-        // nextInt():  - считывает введенное число int
-        // nextDouble():  - считывает введенное число double, аналогично и с Float
-
-        /** Проверяющие методы: */
-        // hasNext():  - проверяет, было ли введено слово
-        // hasNextInt():  - проверяет, было ли введено число int
-        // hasNextDouble():  - проверяет, было ли введено double
-
         System.out.println("Какой президент победил на выборах 2017 года в США?");
         System.out.println("1 - Хиллари Клинтон \n2 - Дональд Трамп");
         int a = readInt(scan); // ниже метод с проверкой на вводимые значения
