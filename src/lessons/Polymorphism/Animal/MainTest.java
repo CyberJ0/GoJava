@@ -12,6 +12,7 @@ public class MainTest {
         test(dog1);
         test(cat1);
     }
+
     public static void test(Animal animal) {
         animal.eat();
     }
