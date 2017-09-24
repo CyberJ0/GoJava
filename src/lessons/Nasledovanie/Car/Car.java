@@ -1,4 +1,4 @@
-package lessons.Nasledovanie;
+package lessons.Nasledovanie.Car;
 
 public class Car {
     public static void main(String[] args) {
