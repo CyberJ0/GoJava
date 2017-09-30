@@ -1,4 +1,4 @@
-package lessons;
+package lessons.Arrays.TwoArrays;
 
 // двумерный массив
 public class TwoDimensionalArray {
