@@ -1,4 +1,4 @@
-package lessons;
+package lessons.Arrays.OneArrays;
 
 public class MinNumArray {
     public static void main(String[] args) {
