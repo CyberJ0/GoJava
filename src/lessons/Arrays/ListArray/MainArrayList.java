@@ -1,4 +1,4 @@
-package lessons;
+package lessons.Arrays.ListArray;
 
 import java.util.ArrayList; // добавляем библиотеку
 
