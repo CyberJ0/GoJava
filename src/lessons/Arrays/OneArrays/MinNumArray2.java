@@ -1,6 +1,6 @@
 package lessons.Arrays.OneArrays;
 
-public class lesson9 {
+public class MinNumArray2 {
     public static void main(String[] args) {
 
 //        Создайте массив из 8 случайных целых чисел из отрезка [-25;11].
