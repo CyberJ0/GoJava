@@ -1,4 +1,4 @@
-package lessons;
+package lessons.Arrays;
 
 // трехмерный массив
 public class ThreeDimensionalArray {
