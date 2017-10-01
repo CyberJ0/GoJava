@@ -1,6 +1,6 @@
 package lessons.Arrays.OneArrays;
 
-public class lesson8 {
+public class ArrayNumMaxAndIndex {
     public static void main(String[] args) {
 
 //        Создайте массив из 12 случайных целых чисел из отрезка [-15;15].
