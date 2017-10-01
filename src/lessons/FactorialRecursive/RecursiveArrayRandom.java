@@ -3,24 +3,39 @@ package lessons.FactorialRecursive;
 import java.util.Random;
 
 public class RecursiveArrayRandom {
+
+    int f(int arg) {
+        int result;
+        if (arg == 1) return 1;
+
+        return result = f(arg - 1) * arg;
+    }
+
     public static void main(String[] args) {
-        int[][] array = new int[5][4];
+
+// Создать массив и функцию которая посчитает все его элементы рекурсивно
+
+        int[] array = new int[5];
 
         Random random = new Random();
-        for (int i = 0; i < array.length; i++)
-            for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = random.nextInt(100);
-            }
-
-            for (int i = 0; i < array.length; i++) {
-                for (int j = 0; j < array[i].length; j++)
-                    System.out.print(array[i][j] + "\t");
-                System.out.println();
-                }
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(100);
+            System.out.print(array[i] + " ");
         }
 
-        public static void f(int arg){
-            System.out.println();
-//            f();
-        }
+        RecursiveArrayRandom recArrRand = new RecursiveArrayRandom();
+
+//        System.out.println(recArrRand.f(array[i]));
+
     }
+}
+//    int methodRecursive(int x) {
+//        int result;
+//        if (x == 1) return 1;
+//        return result = methodRecursive(x - 1) * x;
+//    }
+//
+//    public static void main(String[] args) {
+//        Recursive recursObj = new Recursive();
+//
+//        System.out.println(recursObj.methodRecursive(5));
