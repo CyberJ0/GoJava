@@ -9,5 +9,6 @@ public class SumCycleForeach {
             // System.out.println("Цикл: " + sum);
         }
         System.out.println("Сумма чисел: " + sum);
+
     }
 }
