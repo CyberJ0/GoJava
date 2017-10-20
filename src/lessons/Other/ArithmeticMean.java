@@ -1,4 +1,4 @@
-package lessons;
+package lessons.Other;
 
 public class ArithmeticMean {
     public static void main(String[] args) {

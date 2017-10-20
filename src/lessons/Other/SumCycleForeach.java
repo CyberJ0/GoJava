@@ -1,4 +1,4 @@
-package lessons;
+package lessons.Other;
 
 public class SumCycleForeach {
     public static void main(String[] args) {

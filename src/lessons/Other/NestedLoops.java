@@ -1,4 +1,4 @@
-package lessons;
+package lessons.Other;
 
 public class NestedLoops {
     public static void main(String[] args) {
