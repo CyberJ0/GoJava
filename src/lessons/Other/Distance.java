@@ -11,8 +11,8 @@ public class Distance {
         if(initialDistance <= 0 || traveledDistance <= 0){
             System.out.println("Введенные данные не коректны");
         }else{
-            System.out.println("Дистанци: " + initialDistance + " метров");
-            System.out.println("Пройденное расстояние: " + traveledDistance + " метров");
+            System.out.println("Дистанция: " + initialDistance + " метров.");
+            System.out.println("Пройденное расстояние: " + traveledDistance + " метров.");
         }
     }
 
@@ -34,9 +34,9 @@ public class Distance {
 
         System.out.println("Осталось пройти: " + String.format("%.2f", total) + "%");
 
-        System.out.println("\nРаботает метод getDistance2");
+        System.out.println("\nВнимание! Тут сработает метод getDistance2 со значениями.");
         dt.setDistance(50, 35);
-        System.out.println("Осталось пройти: " + dt.getDistance() + " метров");
+        System.out.println("Осталось пройти: " + dt.getDistance() + " метров.");
 
 
     }
