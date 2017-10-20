@@ -32,7 +32,6 @@ public class Distance {
 
         double total = 100 - (travel / initial * 100);
 
-
         System.out.println("Осталось пройти: " + String.format("%.2f", total) + "%");
 
         System.out.println("\nРаботает метод getDistance2");
