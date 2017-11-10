@@ -39,3 +39,108 @@
         этой последовательности генераторов случайных чисел.
 
         void setSeed(long seed) - Устанавливает семя этого генератора случайных чисел, используя одно long семя.
+
+-----------------------------------------------------------------
+
+Пример 1:
+
+Scanner sc = new Scanner(System.in);
+int number;
+do {
+    System.out.println("Please enter a positive number!");
+    while (!sc.hasNextInt()) {
+        System.out.println("That's not a number!");
+        sc.next(); // this is important!
+    }
+    number = sc.nextInt();
+} while (number <= 0);
+System.out.println("Thank you! Got " + number);
+-----------------------------------------------------------------
+Вот пример сеанса:
+Введите положительное число!
+5
+Это не число!
+-3
+Введите положительное число!
+5
+Спасибо! Получил 5
+
+*************************************************************************************
+
+Пример 2:
+
+Scanner sc = new Scanner(System.in);
+while (!sc.hasNext("exit")) {
+    System.out.println(
+        sc.hasNextInt() ? "(int) " + sc.nextInt() :
+        sc.hasNextLong() ? "(long) " + sc.nextLong() :
+        sc.hasNextDouble() ? "(double) " + sc.nextDouble() :
+        sc.hasNextBoolean() ? "(boolean) " + sc.nextBoolean() :
+        "(String) " + sc.next()
+    );
+}
+-----------------------------------------------------------------
+Пример сеанса:
+5
+(Int) 5
+ложный
+(Boolean) false
+вздор
+(String) blah
+1,1
+(Двойной) 1,1
+100000000000
+(Длинная) 100000000000
+Выход
+
+*************************************************************************************
+
+Пример 3: Проверка гласных
+
+Scanner имеет много расширенных функций, поддерживаемых регулярными выражениями.
+Вот пример использования для проверки гласных.
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Please enter a vowel, lowercase!");
+while (!sc.hasNext("[aeiou]")) {
+    System.out.println("That's not a vowel!");
+    sc.next();
+}
+String vowel = sc.next();
+System.out.println("Thank you! Got " + vowel);
+-----------------------------------------------------------------
+Вот пример сеанса:
+Введите гласную, строчные буквы!
+5
+Это не гласный!
+Z
+Это не гласный!
+е
+Спасибо! Получил
+
+*************************************************************************************
+
+Пример 4. Использование сразу двух Scanner
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Give me a bunch of numbers in a line (or 'exit')");
+while (!sc.hasNext("exit")) {
+    Scanner lineSc = new Scanner(sc.nextLine());
+    int sum = 0;
+    while (lineSc.hasNextInt()) {
+        sum += lineSc.nextInt();
+    }
+    System.out.println("Sum is " + sum);
+}
+-----------------------------------------------------------------
+Вот пример сеанса:
+Дайте мне ряд цифр в строке (или «выйти»)
+3 4 5
+Сумма 12
+10 100 миллионов долларов
+Сумма 110
+чего ждать?
+Сумма равна 0
+Выход
+
+*************************************************************************************
